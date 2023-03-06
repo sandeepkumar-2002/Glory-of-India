@@ -1,0 +1,101 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+}
+.navbar{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(236, 216, 216);
+    display: inline-block;
+    font-size: 1em;
+    /* background: rgb(182, 173, 173); */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin: 2px 106px;     /*dist between two nav buttons*/
+}
+.navbar li a:hover{
+    letter-spacing: 6px;
+    color: gray;
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+    transform: translate(-13%,-105%);
+}
+.navbar input{
+border: 2px solid black;
+border-radius: 14px;
+padding: 3px 17px;
+width: 168px;
+}
+.emb{
+    width: 18%;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(55%,-4%);
+    opacity: 0.3;
+}
+.background{
+    top: 0;
+    left:0;
+    /* position: absolute; */     
+    position: fixed;                 /* for removing the space in right side */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+    z-index: -1;
+}
+.mid{
+    position: relative;
+    transform: translate(2%,130%);
+
+}
+.mid h2{
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.mid h3{
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+    justify-content: space-between;
+
+}
+.mid p{
+    font-size: 1.1em;
+    margin: 20px 0px;
+    font-weight: 400;
+    max-width: 700px;
+    justify-content: space-between;
+}

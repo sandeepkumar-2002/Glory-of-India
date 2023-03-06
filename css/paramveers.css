@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    /* background-image: url(/image/flag.jpg); */
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+
+.bg{
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.6;
+    z-index: -2;
+  
+}
+.container{
+    border: 5px solid black;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: minmax(800px,1000px);
+    /* min-height: 100vh; */
+   justify-content: center;
+}
+
+.inimg img{
+    height: 165px;
+    width: 180px;
+    transform: translate(393px, 4px);
+    border: 5px double black;
+}
+.item{
+    /* border: 2px solid red; */
+    background-color: rgb(255 250 237);
+    padding: 15px 15px;
+    border-radius: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+}
+.item h2,h3{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 10px;
+    padding: 2px 2px;
+}
+.item:hover{
+background: linear-gradient(164deg, rgba(255,145,0,1) 0%, rgba(255,154,21,1) 4%, rgba(255,177,74,1) 14%, rgba(255,237,212,1) 46%, rgba(255,255,255,0.5186449579831933) 46%, rgba(235,255,236,1) 46%, rgba(93,255,101,1) 81%, rgba(64,255,73,1) 87%, rgba(0,255,12,0.5914740896358543) 100%);
+transform: translateY(10px)
+}

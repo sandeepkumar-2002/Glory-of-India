@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my project</title>
+</head>
+
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Unilon of india</h2>
+            <div class="toggle">
+               <img src="/image/icons8-menu-67.png" id="meramenu" alt="explore">
+                    <img src="/image/close.png" id="meracross" alt="cross">
+            
+            </div>
+        </header>
+
+        <video src="video/flag.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Welcome to</h2>
+            <h3>भाRAT where “everything has a use and a value.”</h3>
+            <p>In India, we celebrate the commonality of major differences; we are a land of belonging rather than of blood.” “Everything is recycled in India, even dreams.” “Everything is recycled in India, even life.”</p>
+            <a href="explore.html" target="_blank">Explore The Real Heroes</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/MyGovIndia"  target=”_blank”><img src="/image/icons8-facebook-24.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank"><img src="/image/icons8-instagram-24.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="/image/icons8-twitter-24.png" alt="twitter"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let explore=document.getElementById("meramenu");
+        let cross=document.getElementById("meracross");
+        let togglecontainer=document.querySelector(".toggle");
+        togglecontainer.addEventListener('click',(e)=>{
+            console.log ('click');
+            // if (explore.style.display=="none") {
+            //     explore.style.display="block"
+            //     cross.style.display="none"
+            // }
+            // else if(cross.style.display=="none"){
+            //     explore.style.display="none"
+            //     cross.style.display="block"
+            // }
+            console.log(cross.style)
+            console.log(explore.style)
+        })
+        
+    </script> 
+</body>
+
+</html>
